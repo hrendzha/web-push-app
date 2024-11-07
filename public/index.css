@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+.notificationForm > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.notificationForm label {
+  display: block;
+}

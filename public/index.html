@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Push-API</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <h1>Web-Push-API</h1>
+    <button class="jsReqPermissionForNotifications" type="button">Request Permission for Notifications</button>
+    <button class="jsSubscribeToPushNotifications" type="button">Subscribe to Push Notifications</button>
+
+    <form class="notificationForm jsNotificationForm" autocomplete="off" style="margin-top: 40px;">
+        <div>
+            <label for="username">Select User:</label>
+            <div>
+                <select id="username" name="username" style="min-width: 100px;"></select>
+                <button class="jsReloadUsersList" type="button">reload users list</button>
+            </div>
+        </div>
+
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Web Push Notification" required>
+        </div>
+
+        <div>
+            <label for="body">Body:</label>
+            <textarea id="body" name="body" required>Hello! This is a test notification.</textarea>
+        </div>
+
+        <button class="jsSendNotification" type="submit">Send Notification</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
